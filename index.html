@@ -329,11 +329,19 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-close" width="11" height="11">
                     <use href="./images/symbol-defs.svg#icon-close-vector"></use>
                 </svg>
             </button>
+            <form class="modal-form" action="">
+                <input type="text" class="modal-input" name="name">
+                <input type="text" class="modal-input" name="tel">
+                <input type="text" class="modal-input" name="email">
+                <input type="text" class="modal-input-coment" placeholder="Введите текст" name="comment">
+                <button type="submit" class="send-button"> Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
