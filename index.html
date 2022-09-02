@@ -336,10 +336,30 @@
                 </svg>
             </button>
             <form class="modal-form" action="">
-                <input type="text" class="modal-input" name="name">
-                <input type="text" class="modal-input" name="tel">
-                <input type="text" class="modal-input" name="email">
-                <input type="text" class="modal-input-coment" placeholder="Введите текст" name="comment">
+                <div class="modal-field">
+                    <label for="name"> Имя</label>
+                <input type="text" class="modal-input" name="name" id="name">
+                </div>
+                <div class="modal-form">
+                    <label for="tel">Телефон</label>
+                <input type="tel" class="modal-input" name="tel" id="tel">
+                </div>
+                <div class="modal-form">
+                    <label for="email">Почта</label>
+                <input type="email" class="modal-input" name="email" id="email">
+                </div>
+                <div class="modal-form">
+                    <label for="comment">Комментарий </label>
+                <textarea type="text" class="modal-input-coment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+                <fieldset>
+                    <legend></legend>
+                    <input type="checkbox"
+                    name="add"
+                    id="doc"
+                    value="doc">
+                    <label for="doc">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </fieldset>
                 <button type="submit" class="send-button"> Отправить</button>
             </form>
         </div>
