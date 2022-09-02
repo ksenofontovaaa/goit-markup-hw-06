@@ -338,28 +338,44 @@
             <form class="modal-form" action="">
                 <div class="modal-field">
                     <label for="name"> Имя</label>
-                <input type="text" class="modal-input" name="name" id="name">
+                    <div class="input-wrap">
+                        <input type="text" class="modal-input" name="name" id="name">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
                 </div>
+
                 <div class="modal-form">
                     <label for="tel">Телефон</label>
-                <input type="tel" class="modal-input" name="tel" id="tel">
+                    <div class="input-wrap">
+                        <input type="tel" class="modal-input" name="tel" id="tel" required>
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                    </div>
                 </div>
                 <div class="modal-form">
                     <label for="email">Почта</label>
-                <input type="email" class="modal-input" name="email" id="email">
+                    <div class="input-wrap">
+                        <input type="email" class="modal-input" name="email" id="email" required>
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
+                    </div>  
                 </div>
                 <div class="modal-form">
                     <label for="comment">Комментарий </label>
                 <textarea type="text" class="modal-input-coment" name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
-                <fieldset>
-                    <legend></legend>
+                <div class="modal-form">
                     <input type="checkbox"
-                    name="add"
-                    id="doc"
-                    value="doc">
-                    <label for="doc">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                </fieldset>
+                    name="policy"
+                    id="policy"
+                    value="policy"
+                    class="modal-check">
+                    <label for="policy" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
                 <button type="submit" class="send-button"> Отправить</button>
             </form>
         </div>
